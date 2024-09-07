@@ -92,15 +92,15 @@ async function fetchWeather(city) {
       let weatherimage = document.querySelector(".weather-icon");
       let currentweather = data.weather[0].main
       if (currentweather == "Clouds") {
-        weatherimage.src = "images/weather-app-img/images/clouds.png"
+        weatherimage.src = "./images/weather-app-img/images/clouds.png"
       } else if (data.weather[0].main == "Clear") {
-        weatherimage.src = "images/weather-app-img/images/clear.png";
+        weatherimage.src = "./images/weather-app-img/images/clear.png";
       } else if (data.weather[0].main == "Rain") {
-        weatherimage.src = "images/weather-app-img/images/rain.png";
+        weatherimage.src = "./images/weather-app-img/images/rain.png";
       } else if (data.weather[0].main == "Drizzle") {
-        weatherimage.src = "images/weather-app-img/images/drizzle.png";
+        weatherimage.src = "./images/weather-app-img/images/drizzle.png";
       } else if (data.weather[0].main == "Mist") {
-        weatherimage.src = "images/weather-app-img/images/mist.png";
+        weatherimage.src = "./images/weather-app-img/images/mist.png";
       }
       error.style.display = "none"
     }
